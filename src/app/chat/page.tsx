@@ -52,8 +52,8 @@ export default function ChatPage() {
       {/* Header */}
       <header className="bg-white border-b shadow-sm py-4 px-6">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold text-gray-800">Jabin </h1>
-          <div className="text-sm font-medium text-gray-500">AI Jabin</div>
+          <h1 className="text-xl font-bold text-gray-800">Cyber-Jabin </h1>
+          <div className="text-sm font-medium text-gray-500"></div>
         </div>
       </header>
 
