@@ -1,0 +1,84 @@
+{
+  "title": "CyberJabin: My Personal AI Memory and Growth Companion",
+  "introduction": "I've always wanted an AI system that could continuously record, deeply understand, and reliably remember all my personal experiences. CyberJabin is exactly such an open-source project I'm developing, aimed at building a unique intelligent partner for myself. I can easily add my observations, experiences, and feelings, just like writing a diary. This valuable information will be transformed into deep semantic vectors and optionally stored in a vector database like Pinecone. Furthermore, the AI based on CyberJabin can retrieve and reference these 'memories' at any time, becoming my exclusive automated question-answering system.",
+  "technology": {
+    "title": "🔍 Key Highlights",
+    "features": [
+      {
+        "name": "🧬 Vectorized Resume Storage",
+        "description": "I utilize the OpenAI Embedding API (or other Embedding services I might integrate in the future) to convert my personal information into high-dimensional semantic vectors (1536 dimensions) and optionally store them in a vector database like Pinecone, enabling efficient and accurate semantic retrieval."
+      },
+      {
+        "name": "💡 Semantic Search and Contextual Dialogue",
+        "description": "During conversations with CyberJabin, it can intelligently retrieve and call upon relevant snippets of Jabin's personal information based on the current query, significantly enhancing the personalization and contextual accuracy of AI responses."
+      },
+      {
+        "name": "💬 Self-Developed Chat",
+        "description": "The Chat page implements a smooth and interactive messaging experience."
+      }
+    ],
+    "techStack": {
+      "title": "⚙️ Tech Stack",
+      "description": "Powerful Technology Stack (technologies I've chosen):",
+      "details": [
+        "Frontend: Next.js App Router + React + TypeScript + Tailwind CSS",
+        "Backend: Next.js API Routes",
+        "AI Engine: Currently using OpenAI Embedding & ChatCompletion, exploring more AI services in the future",
+        "Vector Database: Currently using Pinecone, might try other solutions in the future"
+      ]
+    },
+    "architecture": {
+      "title": "Breaking Tradition, Empowering Individuals: Vector Database + Large Language Model Architecture (My Implementation)",
+      "description": "To address the token limitations and cost issues of traditional chat models when handling large amounts of contextual information, I've adopted an architecture combining a Vector Database and a Large Language Model:",
+      "components": [
+        {
+          "name": "Vector Database",
+          "description": "Responsible for the long-term storage and semantic-level retrieval of memories."
+        },
+        {
+          "name": "GPT-4 (or other LLMs)",
+          "description": "Focuses on contextual understanding and natural language generation, ensuring intelligent and fluent responses. I can adjust the LLM used based on my needs."
+        }
+      ],
+      "benefits": "This architecture balances efficiency, scalability, and intelligence."
+    }
+  },
+  "projectProspect": {
+    "title": "🌱 Project Prospects",
+    "description": "CyberJabin's applications extend beyond just resume Q&A; it can be expanded to:",
+    "applications": [
+      "Career Growth Assistant: Records your project experiences and reflections, helping you review or simulate interview dialogues.",
+      "Second Brain System: Organizes personal thoughts, skill notes, and daily logs, establishing structured memory.",
+      "AI-Driven Knowledge Management: Enables AI to quickly reference your past input of 'knowledge' and 'experiences', becoming a truly personalized assistant."
+    ],
+    "trend": "It represents a trend — mapping human knowledge and experiences semantically onto the web and enhancing interaction through AI."
+  },
+  "llmAndVectorDBFeasibility": {
+    "title": "Feasibility of Combining Vector Database + Large Language Model (LLM)",
+    "limitationsOfLLM": "LLMs inherently have limited context windows (e.g., GPT-4-turbo is 128k tokens), but human memory is cumulative. Vector databases can:",
+    "vectorDBAbilities": [
+      "Store tens or hundreds of thousands of vectorized pieces of information.",
+      "Retrieve the most relevant information for the model to reference during conversations through 'semantic similarity search'."
+    ],
+    "semanticUnderstanding": {
+      "title": "Strong Semantic Understanding",
+      "description": "Vectors (embeddings) are semantic-level representations. Even if the user's phrasing changes, as long as the meaning is consistent, it can be successfully recalled. For example:",
+      "exampleEquivalence": [
+        "“I worked on a medical project in Auckland” ≈ “I previously developed a healthcare industry platform”"
+      ]
+    },
+    "modularAndScalableMemory": {
+      "title": "Memory is Modular and Scalable",
+      "description": "Vector databases support incremental addition — store information like a diary, and new content can be 'remembered' without retraining the model."
+    }
+  },
+  "challenges": {
+    "title": "Challenges I'm Actively Exploring and Addressing (Welcome Interested Developers to Communicate):",
+    "list": [
+      "⏳ Enhancing the understanding of 'causal and time-series structures'.",
+      "🗣️ Improving the maintenance of context in multi-turn complex dialogues.",
+      "🔒 Ensuring data privacy and addressing the issue of data sparsity.",
+      "🤝 If there are interested developers, welcome to exchange ideas and technical solutions with me."
+    ]
+  }
+}
