@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@pinecone-database/pinecone": "^5.1.1",
+    "lucide-react": "^0.506.0",
     "next": "15.3.0",
     "openai": "^4.94.0",
     "react": "^19.0.0",
