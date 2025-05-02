@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 CyberJabin
 
-## Getting Started
+**CyberJabin** is an AI-powered resume chatbot system built with **Next.js** that creates a digital representation of yourself. It allows users to store personal resume information and interact with an AI assistant that can answer questions based on that stored information.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🤖 AI-Driven Chat System
+- Interactive chat interface with the "Jabin" AI assistant  
+- Contextual responses based on stored resume information  
+- Real-time message display with visual distinction between user and AI  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📚 Memory Management
+- Add personal resume information to the knowledge base  
+- Store experiences, skills, and qualifications for the AI to reference  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📡 Vector Database Integration
+- Uses **Pinecone** vector database for semantic search  
+- Efficiently retrieves the most relevant resume information for each query  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Technology Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**: Next.js, React, Tailwind CSS  
+- **AI**: OpenAI API (GPT-4 for chat, `text-embedding-3-small` for vector embeddings)  
+- **Vector DB**: Pinecone  
+- **Deployment**: Vercel (recommended)  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📋 How It Works
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📝 Adding Memories
+1. Users add resume information through the memory interface  
+2. Text is converted to vector embeddings using OpenAI  
+3. Vectors are stored in Pinecone with the original text as metadata  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 💬 Chat Interaction
+1. Users ask questions through the chat interface  
+2. Questions are embedded and compared semantically to stored memories  
+3. The system retrieves top-k relevant memories from Pinecone  
+4. GPT-4 generates a context-aware response  
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- Node.js (latest LTS version recommended)  
+- OpenAI API key  
+- Pinecone API key and index  
+
+### Environment Setup
+
+Create a `.env.local` file in the root directory:
+
+```env
+OPENAI_API_KEY=your_openai_api_key  
+PINECONE_API_KEY=your_pinecone_api_key  
+PINECONE_INDEX_NAME=your_pinecone_index_name  
