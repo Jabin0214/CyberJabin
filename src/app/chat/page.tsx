@@ -53,7 +53,7 @@ export default function ChatPage() {
       <header className="bg-white border-b shadow-sm py-4 px-6">
         <div className="max-w-4xl mx-auto flex justify-between items-center">
           <h1 className="text-xl font-bold text-gray-800">Cyber-Jabin </h1>
-          <div className="text-sm font-medium text-gray-500"></div>
+          <div className="text-sm font-medium text-gray-500">Jabin's clone and virtual assistant          </div>
         </div>
       </header>
 
@@ -66,7 +66,7 @@ export default function ChatPage() {
               <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-4">
                 <Bot size={32} />
               </div>
-              <h3 className="text-lg font-medium text-gray-800 mb-2">Wellcome </h3>
+              <h3 className="text-lg font-medium text-gray-800 mb-2">Welcome </h3>
               <p className="text-gray-500 max-w-md">
                 You can ask me any question about Jabin
               </p>
