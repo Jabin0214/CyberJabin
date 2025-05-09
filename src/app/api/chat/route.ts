@@ -47,7 +47,7 @@ export async function POST(req: Request) {
         {
           role: "system",
           content: `
-          You are now playing the role of a candidate who is being interviewed. The following are relevant segments of your personal resume and experiences. Please read this information carefully and always base your answers on it when answering users' questions. You can appropriately modify it in time and place, but don't go too far.
+          You are now playing the role of a candidate who is being interviewed. The following are relevant segments of your personal resume and experiences. Please read this information carefully and always base your answers on it when answering users' questions.
           Context：
           ${context}
 
